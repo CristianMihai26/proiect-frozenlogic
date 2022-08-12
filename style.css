@@ -1,0 +1,160 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+
+    display: block;
+}
+
+
+.tabsWrapper{
+    margin-left: 5rem;
+}
+
+.tabsWrapper h2{
+    font-size: 12px;
+
+}
+
+.tabsWrapper ul{
+    display: flex;
+    gap: 0.3rem;
+}
+
+.iconsWrapper{
+    margin-left: auto;
+    margin-right: 5rem;
+}
+
+.iconsWrapper ul{
+    display: flex;
+}
+
+.navMenu{
+    display: flex;
+    gap:0.3rem;
+    align-items: center;
+}
+
+#arrow{
+    transform: rotate(90deg);
+}
+
+h2{
+    text-align: center;
+}
+
+menu {
+    margin-left: auto;
+    color: #F2F2F2;
+    background: #333333;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    left: 0;
+    right: 0;
+}
+
+
+.navMenuButtons{
+    padding: 15px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+.navMenuButtons:hover{
+    background: black;
+    cursor: pointer;
+}
+
+#icons{
+    width: 16px;
+    height: 18px;
+}
+
+.navMenuIcons{
+    padding: 16px;
+    border-radius: 5px;
+    transition: all 700ms ease;
+}
+
+.navMenuIcons:hover{
+    background:black;
+    cursor: pointer;
+}
+
+.bigWrapper{
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+#iconSideMenu{
+    filter: contrast(0);
+    width: 1rem;
+    height: auto;
+}
+
+
+.wrapperSideList h4{
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: gray;
+    width: 1.4rem;
+}
+
+aside{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    background-color: #f2c94c33;
+    margin-top: 2rem;
+    border-radius: 10px 10px;
+}
+
+.wrapperIndicator{
+ display: flex;
+ gap: 0.3rem;
+}
+.sideMenuButton{
+    display: flex;
+    gap: 9rem;
+    justify-content: start;
+    align-items: center;
+    padding: 12px;
+    background: #F2F2F2;
+}
+
+#movies{
+    border-radius: 5px 5px 0 0;
+}
+
+.sideMenuButton.active{
+    background: #F2C94C;
+}
+
+.sideMenuButton.active #iconSideMenu{
+    filter: contrast(0) brightness(0);
+}
+
+.sideMenuButton.active h4{
+    color: black;
+}
+
+.wrapperSideMenuImage{
+    display: flex;
+    justify-content: center;
+    padding: 1.3rem;
+}
