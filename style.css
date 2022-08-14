@@ -12,9 +12,10 @@
 
 body{
     font-family: sans-serif;
-
+    overflow: hidden;
     display: block;
 }
+
 
 
 .tabsWrapper{
@@ -102,7 +103,7 @@ h2{
     text-align: center;
 }
 
-header{
+header {
     margin-left: auto;
     color: #F2F2F2;
     background: #333333;
@@ -472,6 +473,9 @@ h1{
         height: 0;
         grid-template-columns: 1fr 1fr;
     }
+    .dropDown li{
+        width: 8rem;
+}
 }
 
 @media screen and (max-width:540px) {
