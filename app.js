@@ -9,9 +9,20 @@ let mainButtons = document.getElementById('mainButtons');
 let newHeight, newWidth;
 
 
+
 burger.onclick = function(){
             burger.classList.toggle('active');
-            mainButtons.style.display = mainButtons.style.display === 'flex' ? 'none' : 'flex';}
+            mainButtons.style.display = mainButtons.style.display === 'flex' ? 'none' : 'flex';} 
+
+            window.addEventListener('resize', function(){
+                 newWidth = window.innerWidth;
+                 newHeight = window.innerHeight; 
+                 if (newWidth > 790){
+                    burger.classList.remove('active');
+                    mainButtons.style.display = 'flex';
+                }
+            });
+
 
 
 

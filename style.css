@@ -4,15 +4,14 @@
 
 *{
     list-style: none;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     transition: all 500ms ease;
+    margin: 0;
+    padding: 0;
 }
 
 body{
     font-family: sans-serif;
-    overflow: hidden;
     display: block;
 }
 
@@ -353,6 +352,10 @@ h1{
     width: 28rem;
 }
 
+#carte{
+    width: 100%;
+}
+
 #musicContent{
     display: none;
 }
@@ -490,5 +493,9 @@ h1{
         gap: 0;
         height: 0;
         grid-template-columns: 1fr;
+    }
+
+    #mainButtons{
+        left: 0;
     }
 }
