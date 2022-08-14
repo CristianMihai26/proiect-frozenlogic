@@ -21,6 +21,53 @@ body{
     margin-left: 5rem;
 }
 
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+.burger{
+    z-index: 19;
+    position: absolute;
+    top: 1.5rem;
+    align-content: center;
+    justify-content: center;
+    left: 7rem;
+    display: none;
+    margin-top: -1rem;
+}
+
+.burger.active{
+    z-index: 19;
+    position: absolute;
+    top: 1.5rem;
+    align-content: center;
+    justify-content: center;
+    left: 7rem;
+    display: block;
+    margin-top: -0.5rem;
+}
+
+    .burger.active .line2{
+        transform: rotate(-45deg);
+    top: -8px;
+    position: relative;
+    }
+
+    .burger.active .line1{
+        transform: rotate(45deg);
+    }
+
+    .burger.active .line3{
+        display: none;
+    }
+
+.line1, .line2, .line3 {
+    transition: all 300ms ease;
+}
+
 .tabsWrapper h2{
     font-size: 12px;
 
@@ -29,6 +76,7 @@ body{
 .tabsWrapper #mainButtons{
     display: flex;
     gap: 0.3rem;
+    z-index: 9;
 }
 
 .iconsWrapper{
@@ -309,4 +357,133 @@ h1{
 
 #booksContent{
     display: none;
+}
+
+@media screen and (max-width:1015px){
+    .bigWrapper{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:945px){
+    .bigWrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    aside{
+        float: none;
+        display: block;
+    }
+
+    .wrapperSideMenuImage{
+    display: none;
+    }
+
+     #pointer{
+        transform: rotate(90deg);
+    }
+}
+
+@media screen and (max-width:790px){
+    .burger{
+        display: block;
+    }
+
+    .tabsWrapper #mainButtons{
+        position: absolute;
+        flex-direction: column;
+        gap: 0.3rem;
+        background: #333333;
+        margin-top: 1.3rem;
+        display: none;
+        animation: dropDown 500ms ease;
+        border-radius: 0 0 10px 10px;
+    }
+
+    #arrow{
+        transform: rotate(0deg);
+    }
+
+    #dropDown1{
+        position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: -0.5rem;
+    z-index: 9;
+    justify-content: center;
+    align-items: start;
+    border-radius: 5px;
+    margin-left: 7rem;
+    display: none;
+    }
+
+    #dropDown2{
+        position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 1rem;
+    z-index: 9;
+    justify-content: center;
+    align-items: start;
+    border-radius: 5px;
+    margin-left: 7rem;
+    display: none;
+    }
+}
+
+@keyframes dropDown{
+    0%{
+        margin-top: -20rem;
+        opacity: 100%;
+    }
+
+    100%{
+        margin-top: 1.3rem;
+        opacity: 100%;
+    }
+}
+
+@media screen and (max-width:770px){
+    .wrapperContentRight{
+    gap: 0;
+    height: 0;
+    }
+}
+
+@media screen and (max-width:700px){
+    .wrapperContentRight{
+    gap: 0;
+    height: 0;
+    }
+    #mainPoster{
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width:575px) {
+    #mainPoster{
+        width: 17rem;
+        padding: 15px;
+    }
+    .wrapperContentRight {
+        gap: 0;
+        height: 0;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .burger{
+        left: 2rem;
+    }
+    .burger.active{
+        left: 2rem;
+    }
+
+    .wrapperContentRight{
+        gap: 0;
+        height: 0;
+        grid-template-columns: 1fr;
+    }
 }

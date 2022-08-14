@@ -4,6 +4,35 @@ let books = document.getElementById('books');
 let moviesContent = document.querySelector('.wrapperContentRight');
 let musicContent = document.getElementById('musicContent');
 let booksContent = document.getElementById('booksContent');
+let burger = document.getElementById('burger');
+let mainButtons = document.getElementById('mainButtons');
+let newHeight, newWidth;
+
+window.addEventListener('resize', function(){
+    newWidth = window.innerWidth;
+    newHeight = window.innerHeight; 
+    if (newWidth>790){
+        burger.classList.remove('active');
+        mainButtons.style.display ='flex';
+        burger.style.display = 'none';
+    }
+    if (newWidth<=790){
+        burger.style.display = 'block';
+        mainButtons.style.display = 'none';
+        burger.onclick = function(){
+            burger.classList.toggle('active');
+            mainButtons.style.display = mainButtons.style.display === 'flex' ? 'none' : 'flex';}
+    }
+});
+
+
+
+
+
+
+
+
+
 
 movies.addEventListener('click', ()=>{
 movies.classList.add('active');
