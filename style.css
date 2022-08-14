@@ -16,6 +16,9 @@ body{
     display: block;
 }
 
+menu{
+    z-index: 9;
+}
 
 .tabsWrapper{
     margin-left: 5rem;
@@ -29,7 +32,7 @@ body{
 }
 
 .burger{
-    z-index: 19;
+    z-index: 9;
     position: absolute;
     top: 1.5rem;
     align-content: center;
