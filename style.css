@@ -16,9 +16,6 @@ body{
     display: block;
 }
 
-menu{
-    z-index: 9;
-}
 
 .tabsWrapper{
     margin-left: 5rem;
@@ -105,7 +102,7 @@ h2{
     text-align: center;
 }
 
-menu {
+header {
     margin-left: auto;
     color: #F2F2F2;
     background: #333333;
