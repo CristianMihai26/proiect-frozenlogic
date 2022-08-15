@@ -20,9 +20,9 @@ burger.onclick = function(){
                  if (newWidth > 790){
                     burger.classList.remove('active');
                     mainButtons.style.display = 'flex';
-                    if (newWidth <= 790){
-                        mainButtons.style.display = 'none';
-                    }
+                }
+                if (newWidth <= 790){
+                    mainButtons.style.display = 'none';
                 }
             });
 
